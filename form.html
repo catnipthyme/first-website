@@ -14,13 +14,81 @@
       <p id="underConstruction">website under construction until further notice</p>
     </div>
     <div class="mainLinks">
-      <a href="/index.html">main page</a>
-      <a href="/staff.html">meet the staff</a>
-      <a href="/form.html">contact us</a>
-      <a href="/links.html">further resources</a>
+      <a href="index.html">main page</a>
+      <a href="staff.html">meet the staff</a>
+      <a href="form.html">contact us</a>
+      <a href="links.html">further resources</a>
     </div>
   </div>
-  
+
+  <div class="mainSpace">
+  <form action="/form-handling-url" method="post">
+
+    <fieldset>
+
+      <legend><h1>contact us</h1></legend>
+
+      <div>
+      <p><h3>Inquiries? Requests? Complaints or concerns? Let us know!</h3></p>
+      </div>
+
+      <div>
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="full_name">
+      </div>
+
+      <div>
+        <label for="emailAddress">Magic-Mail Address</label>
+        <input type="email" id="eamilAddress" name="magic_mail_address">
+      </div>
+
+      <div>
+        <label for="primarySchool">Primary School</label>
+        <select id="school" name="primary_school">
+          <option value="cascade_bearers">Cascade Bearers</option>
+          <option value="emerald_bouughs">Emerald Boughs</option>
+          <option value="rain_scribes">Rain-Scribes</option>
+          <option value="tempest_sun_mages">Tempest-Sun Mages</option>
+          <option value="uzunjati">Uzunjati</option>
+          <option value="guest">Not a student</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="secondarySchool">Secondary School</label>
+        <select id="secondarySchool" name="secondary_school">
+          <option value="cascade_bearers">Cascade Bearers</option>
+          <option value="emerald_bouughs">Emerald Boughs</option>
+          <option value="rain_scribes">Rain-Scribes</option>
+          <option value="tempest_sun_mages">Tempest-Sun Mages</option>
+          <option value="uzunjati">Uzunjati</option>
+          <option value="guest">Still not a student</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="inquiry">Message</label>
+        <textarea id="message"></textarea>
+      </div>
+
+      <div class="checkbox">
+        <label for="newsletter">Receive important updates</label>
+        <input type="checkbox" id="newsletter" name="update_signup">
+      </div>
+
+      <div class="checkbox">
+        <label for="termsConditions">I understand that this message may/will be ignored by library staff</label>
+        <input type="checkbox" id="termsConditions" name="terms_conditions">
+      </div>
+
+      <div>
+        <button type="submit">Send Message</button>
+      </div>
+
+    </fieldset>
+  </form>
+  </div>
+
 </body>
 
 </html>
